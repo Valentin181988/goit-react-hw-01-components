@@ -1,4 +1,4 @@
-import { Card, Info, Wrapper, UserImg } from './SocialProfile.styled'
+import { Card, Info, Wrapper, UserImg, StatsList, StatsItem, StatsInfo } from './SocialProfile.styled'
 import { theme } from '../../constants/Theme';
 import user from './user.json';
 
@@ -18,20 +18,20 @@ export const SocialProfile = (user) => {
                 </Info>
         </Wrapper>
   
-        <ul class="stats">
-        <li>
-            <span class="label">Followers</span>
-            <span class="quantity">1000</span>
-        </li>
-        <li>
-            <span class="label">Views</span>
-            <span class="quantity">2000</span>
-        </li>
-        <li>
-            <span class="label">Likes</span>
-            <span class="quantity">3000</span>
-        </li>
-        </ul>
+        <StatsList>
+            <StatsItem>
+                <StatsInfo>Followers</StatsInfo>
+                <StatsInfo>user.stats.followers</StatsInfo>
+            </StatsItem>
+            <StatsItem>
+                <StatsInfo>Views</StatsInfo>
+                <StatsInfo>user.stats.views</StatsInfo>
+            </StatsItem>
+            <StatsItem>
+                <StatsInfo>Likes</StatsInfo>
+                <StatsInfo>user.stats.likes</StatsInfo>
+            </StatsItem>
+        </StatsList>
   </Card>
    );
 };

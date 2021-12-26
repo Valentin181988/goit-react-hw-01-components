@@ -22,3 +22,15 @@ export const Info = styled.p`
     letter-spacing: 0.5px;
     text-transform: uppercase;
 `;
+
+export const StatsList = styled.ul`
+    padding: 4px;
+`;
+
+export const StatsItem = styled.li`
+    list-style-type: none;
+`;
+
+export const StatsInfo = styled.span`
+    color: 'red'
+`;
