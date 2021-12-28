@@ -10,9 +10,9 @@ export const Wrapper = styled.div`
 `;
 
 export const UserImg = styled.img`
-    src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-    alt="User avatar"
-    class="avatar"
+    src: ${props => props.src};
+    alt: "User avatar";
+    class: "avatar";
 `;
 
 export const Info = styled.p`
