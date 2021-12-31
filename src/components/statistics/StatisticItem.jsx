@@ -1,0 +1,22 @@
+export const StatisticItem = ({label, percentage}) => {
+    return(
+        <ul>
+            <li>
+                <span>{label}</span>
+                <span>{percentage}</span>
+            </li>
+            <li>
+                <span>{label}</span>
+                <span>{percentage}</span>
+            </li>
+            <li>
+                <span>{label}</span>
+                <span>{percentage}</span>
+            </li>
+            <li>
+                <span>{label}</span>
+                <span>{percentage}</span>
+            </li>
+        </ul>
+    );
+}
