@@ -6,4 +6,5 @@ export const FriendsWrapper = styled.div`
 
 export const FriendList = styled.ul`
    display: block;
+   padding: 0;
 `;
