@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const UserImg = styled.img`
     src: ${props => props.src};
     alt: "User avatar";
-    class: "avatar";
+    width: 100px;
 `;
 
 export const Info = styled.p`
