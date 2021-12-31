@@ -1,11 +1,11 @@
 
-import { FriendEl, Name } from './FriendsItem.styled';
+import { FriendEl, Name, AvatarImg, Status } from './FriendsItem.styled';
 
 export const FriendsItem = ({friend:{avatar, name, isOnline }}) => {
     return(
         <FriendEl>
-            <span>{isOnline}</span>
-            <img src="" alt="User avatar"/>
+            <Status>{isOnline}</Status>
+            <AvatarImg src={avatar}/>
             <Name>{name}</Name>
         </FriendEl>
     );
