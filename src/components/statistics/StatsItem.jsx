@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import { StatsInfo, StatsInfoWrapper } from './StatsItem.styled'
 
-export const StatsItem = ({statsData: {label, percentage}}) => {
+export const StatsItem = ({statsData: {id, label, percentage}}) => {
     return (
         <StatsInfoWrapper>
            <StatsInfo>{label}</StatsInfo>
@@ -8,3 +9,11 @@ export const StatsItem = ({statsData: {label, percentage}}) => {
         </StatsInfoWrapper>
     );
 };
+
+StatsItem.propTypes = {
+    statsData: PropTypes.shape({
+        id: PropTypes.string,
+        label: PropTypes.string,
+        percentage: PropTypes.number,
+    })
+}
