@@ -1,16 +1,23 @@
 import PropTypes from 'prop-types';
-import { Card, Info, Wrapper, UserImg, StatsList, StatsItem, StatsInfo } from './SocialProfile.styled'
+import { Card,
+          Info, 
+          Wrapper, 
+          UserImg, 
+          StatsList, 
+          StatsItem, 
+          StatsInfo, 
+          InfoName, 
+          StatsInfoValue } from './SocialProfile.styled';
 import { theme } from '../../constants/Theme';
-
 
 export const SocialProfile = ({user: {avatar, username, tag, location, stats}}) => {
    return(
     <Card>
         <Wrapper>
             <UserImg src={avatar}/>
-                <Info>
+                <InfoName>
                   {username} 
-                </Info>
+                </InfoName>
                 <Info>
                   {tag} 
                 </Info>
@@ -22,15 +29,15 @@ export const SocialProfile = ({user: {avatar, username, tag, location, stats}}) 
         <StatsList>
             <StatsItem>
                 <StatsInfo>Followers</StatsInfo>
-                <StatsInfo>{stats.followers}</StatsInfo>
+                <StatsInfoValue>{stats.followers}</StatsInfoValue>
             </StatsItem>
             <StatsItem>
                 <StatsInfo>Views</StatsInfo>
-                <StatsInfo>{stats.views}</StatsInfo>
+                <StatsInfoValue>{stats.views}</StatsInfoValue>
             </StatsItem>
             <StatsItem>
                 <StatsInfo>Likes</StatsInfo>
-                <StatsInfo>{stats.likes}</StatsInfo>
+                < br/><StatsInfoValue>{stats.likes}</StatsInfoValue>
             </StatsItem>
         </StatsList>
   </Card>
