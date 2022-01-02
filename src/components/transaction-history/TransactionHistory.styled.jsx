@@ -10,7 +10,7 @@ export const Table = styled.table`
 `;
 
 export const Thead = styled.thead`
-   background-color: #afe2e6;
+   background-color: ${theme.colors.whiteBlue};
 `;
 
 export const TableTitle = styled.th`
