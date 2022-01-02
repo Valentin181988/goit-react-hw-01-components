@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
-import { StatsInfo, StatsInfoWrapper } from './StatsItem.styled'
+import { StatsInfo, 
+         StatsInfoWrapper, 
+         StatsInfoValue  } from './StatsItem.styled';
 
 export const StatsItem = ({statsData: {id, label, percentage}}) => {
     return (
         <StatsInfoWrapper>
            <StatsInfo>{label}</StatsInfo>
-           <br/><StatsInfo>{percentage}</StatsInfo>
+           <br/><StatsInfoValue >{percentage}</StatsInfoValue >
         </StatsInfoWrapper>
     );
 };
