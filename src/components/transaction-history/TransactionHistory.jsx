@@ -1,16 +1,16 @@
-import { Table, TableTitle } from "./TransactionHistory.styled";
+import { Table, TableTitle, Thead } from "./TransactionHistory.styled";
 import { TransactionItem } from "./TransactionItem";
 
 export const TransactionHistory = (props) => {
     return(
         <Table>
-            <thead>
+            <Thead>
                 <tr>
                     <TableTitle>Type</TableTitle>
                     <TableTitle>Amount</TableTitle>
                     <TableTitle>Currency</TableTitle>
                 </tr>
-            </thead> 
+            </Thead> 
             <tbody>
                 {props.items.map(trItem => (
                     <TransactionItem key={trItem.id} trItem={trItem}/>

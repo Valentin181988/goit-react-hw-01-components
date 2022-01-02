@@ -8,7 +8,6 @@ import { Card,
           StatsInfo, 
           InfoName, 
           StatsInfoValue } from './SocialProfile.styled';
-import { theme } from '../../constants/Theme';
 
 export const SocialProfile = ({user: {avatar, username, tag, location, stats}}) => {
    return(
